@@ -56,6 +56,31 @@ be interpreted as evidence of a consistently profitable
 trading signal.
 
 
+## Fixed Exit vs Best-Case Exit
+
+To investigate whether poor exit timing was responsible
+for the negative trading results, I compared a fixed
+30-snapshot exit with an oracle-based best-case exit.
+
+![Fixed Exit vs Best-Case Exit](figures/best_case_comparison.png)
+
+### Key Results
+
+- **Fixed Exit Average Net PnL:** -0.165411 USDT
+- **Best-Case Average Net PnL:** -0.131483 USDT
+- **Number of trades:** 50
+- **Best-Case Unprofitable Trades:** 49 out of 50
+
+Even when selecting the most favorable observed exit
+quote within each holding window, 98% of trades
+failed to overcome the assumed transaction costs.
+
+The best-case exit uses future price information and
+is therefore a retrospective benchmark, not an
+executable trading strategy.
+
+
+
 ## Key Finding
 
 **Statistical predictability does not necessarily imply economic profitability.**
