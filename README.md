@@ -107,3 +107,75 @@ Python, Pandas, NumPy-compatible numerical analysis, Matplotlib, Requests, CSV a
 Research and exploratory validation completed. The strategy is **not intended for live trading**.
 
 The code and findings are provided for educational and research purposes.
+
+
+## Installation & Usage
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/berkant1863-netizen/btcusdt-market-microstructure-project.git
+cd btcusdt-market-microstructure-project
+```
+
+### 2. Install Dependencies
+
+Python 3 is required.
+
+```bash
+python3 -m pip install -r requirements.txt
+```
+
+### 3. Configure Data Collection
+
+Open `market_microstructure.py` and update the settings:
+
+```python
+COLLECT_NEW_DATA = True
+CSV_FILE = "orderbook_data.csv"
+SNAPSHOT_COUNT = 2000
+```
+
+Setting `COLLECT_NEW_DATA = True` collects new BTCUSDT order book snapshots using the Binance REST API.
+
+**Warning:** Data collection opens the selected CSV file in write mode and overwrites an existing file with the same name.
+
+### 4. Run the Research
+
+```bash
+python3 market_microstructure.py
+```
+
+The script collects data and runs the research analyses.
+
+After collecting data, change:
+
+```python
+COLLECT_NEW_DATA = False
+```
+
+Run the script again to analyze the existing CSV without collecting new data.
+
+### 5. Data Availability
+
+Raw market data CSV files are not included in this repository.
+
+Users can collect their own BTCUSDT order book snapshots using the data collection functionality.
+
+Results may differ depending on market conditions, API latency, and sampling intervals.
+
+### 6. Research Outputs
+
+The project includes:
+
+- Order book feature calculations
+- OBI and OFI correlation analysis
+- Signal decay analysis
+- Trading strategy backtests
+- Transaction cost analysis
+- OBI strength and entry-event analysis
+- Fixed-exit and best-case-exit comparisons
+- Data quality and backtest validation
+
+Selected research figures are available in the `figures/` directory.
+
