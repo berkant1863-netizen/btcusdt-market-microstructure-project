@@ -39,6 +39,23 @@ The best-case exit selects the most favorable observed bid or ask quote within e
 
 Even under this favorable assumption, **49 of 50 trades failed to overcome the modeled transaction costs**.
 
+
+## Signal Decay Analysis
+
+The analysis examines how the relationship between current
+Order Book Imbalance (OBI) and subsequent midprice changes
+evolves across different snapshot lags.
+
+![OBI and OFI Signal Decay](figures/signal_decay.png)
+
+The results suggest that the short-horizon predictive
+relationship weakens as the lag increases.
+
+The chart represents an exploratory sample and should not
+be interpreted as evidence of a consistently profitable
+trading signal.
+
+
 ## Key Finding
 
 **Statistical predictability does not necessarily imply economic profitability.**
