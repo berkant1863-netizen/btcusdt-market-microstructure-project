@@ -10,5 +10,4 @@ In the final test, 50 trades were simulated, with only one remaining profitable 
 
 Key Finding: Although order book imbalance may contain predictive information about short-term price movements, this statistical advantage does not necessarily translate into economic profitability when the resulting price movements are insufficient to cover trading costs.
 
-This Quantitative Research project focuses on market microstructure, financial data analysis, statistical signal research, and transaction-cost-aware backtesting. The findings are limited to the observed market period and simulation assumptions and do not represent live trading performance.
-
+This Quantitative Research project focuses on market microstructure, financial data analysis, statistical signal research, and transaction-cost-aware backtesting. 
